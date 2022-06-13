@@ -1,0 +1,23 @@
+{
+  "name": "Browser History",
+  "version": "1.2",
+  "description": "Reads your history, and shows pages by typing the URL.",
+  "permissions": [
+    "history",
+    "tabs",
+    "storage",
+    "<all_urls>",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "externally_connectable": {
+    "matches": ["http://127.0.0.1:8000/*"]
+  },
+  "browser_action": {
+    "default_icon": "url.png"
+  },
+  "background": {
+    "scripts": ["Urls.js"]
+  },
+  "manifest_version": 2
+}
